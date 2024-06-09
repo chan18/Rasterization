@@ -4,15 +4,18 @@ using System;
 using System.Drawing;
 using System.Runtime.Versioning;
 
-public class Draw {
+public class Draw : IDisposable {
+    public void Dispose()
+    {
+        
+    }
 
     [SupportedOSPlatform("windows")]
-    public void drawing() {
+    public void drawing(string path) {
 
         int width = 200;
         int height = 200;
         Bitmap bitmap = new Bitmap(width, height);
-        var path = Path.GetTempPath();
 
         using (Graphics graphics = Graphics.FromImage(bitmap))
         {
@@ -29,8 +32,9 @@ public class Draw {
             }
         }
 
-        string filePath = "output.png";
-        bitmap.Save(path + filePath);
+        string filePath = path + "output.png";
+        Console.WriteLine($"file path {filePath}");
+        bitmap.Save(filePath);
 
         Console.WriteLine($"Image saved to {filePath}");
     }

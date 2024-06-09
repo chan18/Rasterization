@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "raster", "raster\raster.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rasterization", "rasterization\rasterization.csproj", "{BA7EDB75-B00B-45E4-9140-E91D1D14A3B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{8BD08AE0-1E7A-45AC-9FD6-66336281A7E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{BA7EDB75-B00B-45E4-9140-E91D1D14A3B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA7EDB75-B00B-45E4-9140-E91D1D14A3B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA7EDB75-B00B-45E4-9140-E91D1D14A3B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BD08AE0-1E7A-45AC-9FD6-66336281A7E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD08AE0-1E7A-45AC-9FD6-66336281A7E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD08AE0-1E7A-45AC-9FD6-66336281A7E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD08AE0-1E7A-45AC-9FD6-66336281A7E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
