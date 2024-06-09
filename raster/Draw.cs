@@ -12,6 +12,7 @@ public class Draw {
         int width = 200;
         int height = 200;
         Bitmap bitmap = new Bitmap(width, height);
+        var path = Path.GetTempPath();
 
         using (Graphics graphics = Graphics.FromImage(bitmap))
         {
@@ -29,7 +30,7 @@ public class Draw {
         }
 
         string filePath = "output.png";
-        bitmap.Save(filePath);
+        bitmap.Save(path + filePath);
 
         Console.WriteLine($"Image saved to {filePath}");
     }
